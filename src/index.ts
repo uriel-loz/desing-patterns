@@ -26,9 +26,11 @@ class Main {
 
     public run() {
         console.log(`Running on ${this.os}`);
-        this.factory.renderButton();
-        this.factory.renderText();
-        this.factory.renderWindow();
+        this.factory.renderButton().render();
+        this.factory.renderText().render();
+        this.factory.renderWindow().render();
     }
 }
 
+const main = new Main();
+main.run();
