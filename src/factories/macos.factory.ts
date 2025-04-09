@@ -1,47 +1,32 @@
+import MacButton from "../components/macos/mac-button";
+import MacTextbox from "../components/macos/mac-textbox";
+import MacWindow from "../components/macos/mac-window";
 import { GUIFactory } from "../interfaces/gui-factory.interface";
 import { Button, TextBox, Window } from "../interfaces/ui-components.interface";
 
 class MacOsFactory implements GUIFactory {
     renderButton(): Button {
-        return {
-            render: () => console.log("MacOs Button Rendered"),
-            handleClick: () => console.log("MacOs Button Clicked")
-        };
+        return new MacButton();
     }
 
     handlerClick(): Button {
-        return {
-            render: () => console.log("MacOs Button Rendered"),
-            handleClick: () => console.log("MacOs Button Clicked")
-        };
+        return new MacButton();
     }
 
     renderText(): TextBox {
-        return {
-            render: () => console.log("MacOs TextBox Rendered"),
-            processInput: () => console.log("MacOs TextBox Input Processed")
-        };
+        return new MacTextbox();
     }
 
     processInput(): TextBox {
-        return {
-            render: () => console.log("MacOs TextBox Rendered"),
-            processInput: () => console.log("MacOs TextBox Input Processed")
-        };
+        return new MacTextbox();
     }
 
     renderWindow(): Window {
-        return {
-            render: () => console.log("MacOs Window Rendered"),
-            addComponent: () => console.log("MacOs Component Added")
-        };
+        return new MacWindow();
     }
 
     addComponent(): Window {
-        return {
-            render: () => console.log("MacOs Window Rendered"),
-            addComponent: () => console.log("MacOs Component Added")
-        };
+        return new MacWindow();
     }
 }
 

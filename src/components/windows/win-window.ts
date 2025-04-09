@@ -1,11 +1,11 @@
 import { Window } from "../../interfaces/ui-components.interface";
 
 class WinWindow implements Window{
-    render() {
+    render(): void {
         console.log("Windows Window Rendered");
     }
 
-    addComponent() {
+    addComponent(): void {
         console.log("Windows Component Added");
     }
 }

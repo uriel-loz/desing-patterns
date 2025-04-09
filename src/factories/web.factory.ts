@@ -1,47 +1,32 @@
+import WebButton from "../components/web/web-button";
+import WebTextbox from "../components/web/web-textbox";
+import WebWindow from "../components/web/web-window";
 import { GUIFactory } from "../interfaces/gui-factory.interface";
 import { Button, TextBox, Window } from "../interfaces/ui-components.interface";
 
 class WebFactory implements GUIFactory {
     renderButton(): Button {
-        return {
-            render: () => console.log("Web Button Rendered"),
-            handleClick: () => console.log("Web Button Clicked")
-        };
+        return new WebButton();
     }
 
     handlerClick(): Button {
-        return {
-            render: () => console.log("Web Button Rendered"),
-            handleClick: () => console.log("Web Button Clicked")
-        };
+        return new WebButton();
     }
 
     renderText(): TextBox {
-        return {
-            render: () => console.log("Web TextBox Rendered"),
-            processInput: () => console.log("Web TextBox Input Processed")
-        };
+        return new WebTextbox();
     }
 
     processInput(): TextBox {
-        return {
-            render: () => console.log("Web TextBox Rendered"),
-            processInput: () => console.log("Web TextBox Input Processed")
-        };
+        return new WebTextbox();
     }
 
     renderWindow(): Window {
-        return {
-            render: () => console.log("Web Window Rendered"),
-            addComponent: () => console.log("Web Component Added")
-        };
+        return new WebWindow();
     }
 
     addComponent(): Window {
-        return {
-            render: () => console.log("Web Window Rendered"),
-            addComponent: () => console.log("Web Component Added")
-        };
+        return new WebWindow();
     }
 }
 

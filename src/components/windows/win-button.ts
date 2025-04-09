@@ -1,11 +1,11 @@
 import { Button } from "../../interfaces/ui-components.interface";
 
 class WinButton implements Button{
-    render () {
+    render(): void {
         console.log("Windows Button Rendered");
     }
 
-    handleClick () {
+    handleClick(): void {
         console.log("Windows Button Clicked");
     }
 }
