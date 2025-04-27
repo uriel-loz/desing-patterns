@@ -3,14 +3,14 @@ import Contact from "./contact";
 import Phone from "./phone";
 
 class Employee {
-    private _age!: number;
-    private _name!: string;
-    private _gender!: string;
-    private _adress!: Address;
-    private _phone!: Phone[];
-    private _contact!: Contact[];
+    private _age: number|null = null;
+    private _name: string|null = null;
+    private _gender: string|null = null;
+    private _adress: Address|null = null;
+    private _phone: Phone[] = [];
+    private _contact: Contact[] = [];
 
-    constructor(age: number, name: string, gender: string, adress: Address, phone: Phone[], contact: Contact[]) {
+    constructor(age: number | null, name: string | null, gender: string | null, adress: Address | null, phone: Phone[], contact: Contact[]) {
         this._age = age;
         this._name = name;
         this._gender = gender;
@@ -19,7 +19,7 @@ class Employee {
         this._contact = contact;
     }
 
-    public get age(): number {
+    public get age(): number|null {
         return this._age;
     }
 
@@ -27,7 +27,7 @@ class Employee {
         this._age = value;
     }
 
-    public get name(): string {
+    public get name(): string|null {
         return this._name;
     }
 
@@ -35,7 +35,7 @@ class Employee {
         this._name = value;
     }
 
-    public get gender(): string {
+    public get gender(): string|null {
         return this._gender;
     }
 
@@ -43,7 +43,7 @@ class Employee {
         this._gender = value;
     }
 
-    public get adress(): Address {
+    public get adress(): Address|null {
         return this._adress;
     }
 
