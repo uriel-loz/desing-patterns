@@ -1,0 +1,39 @@
+{
+  "appName": "TestApp",
+  "version": "1.0.0",
+  "server": {
+    "host": "localhost",
+    "port": 3000,
+    "ssl": {
+      "enabled": false,
+      "keyPath": "",
+      "certPath": ""
+    }
+  },
+  "database": {
+    "host": "127.0.0.1",
+    "port": 5432,
+    "username": "dbuser",
+    "password": "dbpassword",
+    "name": "mi_base_de_datos",
+    "pool": {
+      "max": 10,
+      "min": 2,
+      "idleTimeoutMillis": 30000
+    }
+  },
+  "logging": {
+    "level": "info",
+    "file": "logs/app.log",
+    "console": true
+  },
+  "features": {
+    "enableSignup": true,
+    "enablePayments": false,
+    "experimentalUI": false
+  },
+  "api": {
+    "timeout": 5000,
+    "retryAttempts": 3
+  }
+}
