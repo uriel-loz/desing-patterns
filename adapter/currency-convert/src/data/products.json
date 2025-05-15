@@ -1,0 +1,94 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "Auriculares inalámbricos",
+			"category": "Electrónica",
+			"price": 59.99,
+			"currency": "USD",
+			"stock": 150,
+			"description": "Auriculares Bluetooth con cancelación de ruido y micrófono integrado.",
+			"features": {
+				"battery_life_hours": 20,
+				"weight_g": 250,
+				"available_colors": ["negro", "blanco", "azul"]
+			},
+			"sku": "AUD-BT-001"
+		},
+		{
+			"id": 2,
+			"name": "Mochila urbana",
+			"category": "Accesorios",
+			"price": 45.0,
+			"currency": "USD",
+			"stock": 80,
+			"description": "Mochila resistente al agua con puerto USB para carga móvil.",
+			"features": {
+				"capacity_liters": 20,
+				"material": "poliéster impermeable",
+				"compartments": 5
+			},
+			"sku": "MOC-URB-002"
+		},
+		{
+			"id": 3,
+			"name": "Cámara digital compacta",
+			"category": "Fotografía",
+			"price": 249.5,
+			"currency": "USD",
+			"stock": 40,
+			"description": "Cámara de 20MP con zoom óptico 10x y grabación de vídeo Full HD.",
+			"features": {
+				"resolution_mp": 20,
+				"optical_zoom": "10x",
+				"video_quality": "1080p"
+			},
+			"sku": "CAM-CPT-003"
+		},
+		{
+			"id": 4,
+			"name": "Juego de tazas de cerámica",
+			"category": "Hogar",
+			"price": 29.95,
+			"currency": "USD",
+			"stock": 200,
+			"description": "Set de 4 tazas de cerámica con diseños modernos.",
+			"features": {
+				"capacity_ml": 350,
+				"dishwasher_safe": true,
+				"colors": ["gris", "blanco", "negro", "verde"]
+			},
+			"sku": "TAZ-SET-004"
+		},
+		{
+			"id": 5,
+			"name": "Camisa de algodón",
+			"category": "Ropa",
+			"price": 35.0,
+			"currency": "USD",
+			"stock": 120,
+			"description": "Camisa de manga larga 100% algodón, corte slim fit.",
+			"features": {
+				"sizes": ["S", "M", "L", "XL"],
+				"available_colors": ["blanco", "azul", "negro"],
+				"material": "algodón peinado"
+			},
+			"sku": "CAM-ALG-005"
+		},
+		{
+			"id": 6,
+			"name": "Libro: JavaScript Moderno",
+			"category": "Libros",
+			"price": 24.99,
+			"currency": "USD",
+			"stock": 60,
+			"description": "Guía completa de JavaScript ES6+ con ejemplos prácticos.",
+			"features": {
+				"pages": 450,
+				"language": "español",
+				"format": "tapa blanda"
+			},
+			"sku": "LIB-JSM-006"
+		}
+	]
+}
