@@ -1,6 +1,6 @@
-import { Elements } from "../interfaces/elements";
+import { Render } from "../interfaces/render";
 
-class Txt implements Elements {
+class Txt implements Render {
     private text: string;
 
     constructor(text: string) {
@@ -8,7 +8,7 @@ class Txt implements Elements {
     }
 
     draw(): string {
-        return `${this.text}\n`
+        return `${this.text}\n`;
     }
 }
 
