@@ -1,5 +1,5 @@
 export interface UIComponent {
-    render(): void;
+    render(): string;
     getWidth(): number;
     getHeight(): number;
 }

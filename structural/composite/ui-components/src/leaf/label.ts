@@ -9,8 +9,8 @@ class Label implements UIComponent {
         this.height = height;
     }
 
-    render(): void {
-        console.log(`Label Rendered with width: ${this.width} and height: ${this.height}`);
+    render(): string {
+        return `Label Rendered with width: ${this.width} and height: ${this.height}`;
     }
 
     getWidth(): number {

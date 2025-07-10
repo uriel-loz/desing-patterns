@@ -26,7 +26,7 @@ abstract class Container implements UIComponent {
         return this.height;
     }
 
-    abstract render(): void;
+    abstract render(): string;
 }
 
 export default Container;
